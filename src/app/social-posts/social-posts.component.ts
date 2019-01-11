@@ -20,4 +20,8 @@ export class SocialPostsComponent implements OnInit {
     ];
   }
 
+  removePost(index: number) {
+    this.postList.splice(index, 1);
+  }
+
 }

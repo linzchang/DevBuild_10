@@ -7,7 +7,7 @@
       <div *ngFor="let item of postList; let i = index">
         <div>
           <h3>{{item.subject}}</h3>
-          <button class="removebutton">X</button>
+          <button class="removebutton" (click)="removePost(i)">X</button>
           <p>{{item.body}}</p>
         </div>
         <hr>
