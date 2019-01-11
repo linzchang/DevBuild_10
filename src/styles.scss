@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Coiny|Vibur');
 html {
     height: 100%;
 }
 body {
-    background-image: linear-gradient(#E73D62, #7c2135);
+    background-image: linear-gradient(#FF5733,#FE8166);
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -13,6 +14,10 @@ body {
 }
 h1 
 {
-    font-family: 'Montserrat', sans-serif;
-    margin: 10px;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 50px;
+    color: #FFC300;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    margin: 0;
 }

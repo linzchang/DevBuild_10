@@ -2,11 +2,13 @@
   <div class="middle">
 
     <div class="inner newpost">
-        <button class="addbutton" (click)="viewForm=true">New Thought</button>
-        <div *ngIf="viewForm">
-          <input class="item textbox" [(ngModel)]="addSubject" placeholder="Subject">
-          <textarea class="item textbox" [(ngModel)]="addBody" placeholder="Body"></textarea>
-          <button class="addbutton" (click)="addPost(addSubject, addBody); viewForm=false">Add Post</button>
+        <button class="addbutton" (click)="viewForm=true">New Post</button>
+        <div class="inner" *ngIf="viewForm">
+          <p class="item">Title</p> 
+          <input class="item textbox additem" [(ngModel)]="addSubject" placeholder="Subject">
+          <p class="item">Thought</p>
+          <textarea class="item textbox additem" [(ngModel)]="addBody" placeholder="Body"></textarea>
+          <button class="addbutton" (click)="addPost(addSubject, addBody); viewForm=false; addSubject=''; addBody=''">Add Post</button>
         </div>
       </div>
 
