@@ -4,9 +4,9 @@
     <div class="inner newpost">
         <button class="addbutton" (click)="viewForm=true">New Thought</button>
         <div *ngIf="viewForm">
-          <input class="item textbox" [(ngModel)]="newPost.subject" placeholder="Subject">
-          <textarea class="item textbox" [(ngModel)]="newPost.body" placeholder="Body"></textarea>
-          <button class="addbutton" (click)="addPost(newPost, viewForm); viewForm=false">Add Post</button>
+          <input class="item textbox" [(ngModel)]="addSubject" placeholder="Subject">
+          <textarea class="item textbox" [(ngModel)]="addBody" placeholder="Body"></textarea>
+          <button class="addbutton" (click)="addPost(addSubject, addBody); viewForm=false">Add Post</button>
         </div>
       </div>
 
