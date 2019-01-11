@@ -19,10 +19,16 @@
     width: 400px;
     border-radius: 4px;
     background-color: whitesmoke;
-    padding: 30px;
     text-align: left;
-    // font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
+.newpost {
+    padding: 10px;
+}
+.posts {
+    padding: 30px;
+}
 .item {
     margin: 5px;
     padding: 5px;
@@ -67,10 +73,3 @@
 .removebutton:hover {
     background-color: #E73D62;
 }
-// .taskIncomplete {
-//     color: black;
-// }
-
-// .taskComplete {
-//     text-decoration: line-through;
-// }
