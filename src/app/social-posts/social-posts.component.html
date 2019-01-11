@@ -1,17 +1,23 @@
 <div class="outer">
   <div class="middle">
+
     <div class="inner newpost">
-        <button class="addbutton">New Thought</button>
-    </div>
+        <button class="addbutton" (click)="viewForm=true">New Thought</button>
+        <div *ngIf="viewForm">
+          <input class="item textbox" [(ngModel)]="newPost.subject" placeholder="Subject">
+          <textarea class="item textbox" [(ngModel)]="newPost.body" placeholder="Body"></textarea>
+          <button class="addbutton" (click)="addPost(newPost, viewForm); viewForm=false">Add Post</button>
+        </div>
+      </div>
+
     <div class="inner posts">
       <div *ngFor="let item of postList; let i = index">
-        <div>
           <h3>{{item.subject}}</h3>
           <button class="removebutton" (click)="removePost(i)">X</button>
           <p>{{item.body}}</p>
-        </div>
         <hr>
       </div>
     </div>
+
   </div>
 </div>

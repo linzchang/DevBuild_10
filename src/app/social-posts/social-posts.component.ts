@@ -11,6 +11,8 @@ export class SocialPostsComponent implements OnInit {
   constructor() { }
 
   postList: PostModel[];
+  viewForm: boolean = false;
+  newPost: PostModel;
 
   ngOnInit() {
     this.postList = [
@@ -18,6 +20,10 @@ export class SocialPostsComponent implements OnInit {
       { subject: "Cat", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." },
       { subject: "Fish", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." }
     ];
+  }
+
+  addPost(post: PostModel, view: boolean) {
+
   }
 
   removePost(index: number) {
